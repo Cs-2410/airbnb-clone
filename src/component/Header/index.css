@@ -1,0 +1,119 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 1rem 3rem;
+    /* overflow: auto; */
+    position: fixed;
+    
+    background-color: var(--white);
+    
+    width: 94%;
+    z-index: 1000;
+    
+}
+
+.navbar-logo{
+    height: 2rem;
+    cursor: pointer;
+    background-color: var(--l-grey);
+}
+
+.search-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 1rem;
+    border: 1px solid var(--grey);
+    border-radius: 2.2rem;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+}
+.search-bar:hover{
+    box-shadow: 0 1px 2px rgb(0 0 0 / 12%), 0 4px 12px rgb(0 0 0 / 8%);
+    transition: all 0.15sec;
+    cursor: pointer;
+}
+.search-bar-text{
+    font-size:  0.8rem;
+    font-weight: 650;
+    border-right: var(--grey);
+    padding-right: 0.3rem;
+}
+.search-bar-text2{
+    font-size:  0.8rem;
+    font-weight: 350;
+    border-right: var(--l-grey);
+    padding-right: 0.3rem;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    padding: 0.15rem;
+    border-radius: 50%;
+    color: var(--white);
+
+}
+.profile-icon{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.24rem;
+}
+.airbnb-home{
+    padding: 1rem;
+    font-weight: 650;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+.airbnb-home:hover{
+    background-color: var(--l-grey);
+}
+
+.profile-menu-flex{
+    display: flex;
+    justify-content: flex-start;
+    
+    align-items: center;
+    gap: 0.25rem;
+   color: var(--f-grey);
+   border: 1px solid var(--grey);
+   padding: 0.5rem;
+   border-radius: 2rem;
+   cursor: pointer;
+}
+.bottom-nav{
+    display: none;
+    top: 100;
+}
+
+@media only screen and (max-width: 700px) {
+    .bottom-nav {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-top: 1px solid var(--grey);
+        box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
+        z-index: 1000;
+      }
+      
+      .airbnb-your-home,
+      .profile-icon,
+      .navbar-logo {
+        display: none;
+      }
+      .navbar {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .search-bar {
+        width: 100%;
+        top: 0.5rem;
+        right: 1.5rem;
+      }
+}
